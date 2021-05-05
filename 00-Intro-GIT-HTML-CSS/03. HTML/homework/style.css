@@ -1,0 +1,24 @@
+h1
+{
+    color: #33a2ff;
+}
+img
+{
+    height: 250px;
+}
+#spanId
+{
+    font-size: 18px;
+    margin: 50px;
+}
+
+#thirdDiv
+{
+    height: 600px;
+    width: 500px;
+    background-color: #33a2ff;
+    padding: 50px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #00FF00;
+}
