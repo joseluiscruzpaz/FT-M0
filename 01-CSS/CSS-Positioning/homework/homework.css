@@ -42,6 +42,7 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
     position: fixed;
     top: 0;
     left: 0;
+    height: 110px;
 }
 
 
@@ -50,9 +51,17 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 /* Acá va tu código */
 #ejercicioCinco
 {
-    display: flexbox;
-    align-self: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
 }
 
 
 /* Ejercicio 6. */
+
+#ejercicioCinco
+{
+    flex-flow: row-reverse;
+    
+}
