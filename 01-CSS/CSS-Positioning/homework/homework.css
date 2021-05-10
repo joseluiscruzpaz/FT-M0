@@ -65,3 +65,32 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
     flex-flow: row-reverse;
     
 }
+
+/*Ejercicio 7*/
+#elementoUno
+{
+    position: relative;
+    top: 35%;
+    left: 375px;
+}
+
+#elementoDos
+{
+    position: relative;
+    top: 35%;
+    left: 127px;
+}
+
+#elementoTres
+{
+    position: relative;
+    top: 35%;
+    left: -120px;
+}
+
+#elementoCuatro
+{
+    position: relative;
+    top: 35%;
+    left: -372;
+}
