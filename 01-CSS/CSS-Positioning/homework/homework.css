@@ -20,7 +20,7 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 
 #ejercicioDos
 {
-    display: none;
+    visibility: hidden;
 }
 
 /* Ejercicio 3: */
