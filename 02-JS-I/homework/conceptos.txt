@@ -1,0 +1,13 @@
+* Variables: Es un espacio en memoria que no ssirve para almacenar datos, mismos qu epueden ser utilizados a lo largo del codigo.
+* Strings: Es uno de los tipod de satos que puede utilizar JS, mismo que son caracteres que a su ves pueden unirse para formar palabras
+* Funciones (argumentos, `return`): Nos permite agrupar codigo que puede ser utilizado N cantidad de veces a lo largo del codigo.
+            estructura de la funcion:
+                function nombre (argumentos que recibe) {
+                    en este espacio van las instrucciones
+                    o lo que va a rtealizar la funcion
+                }
+* Declaraciones `if`: mediante el IF podemos validar y hacer comparaciones
+            consu complemento "else" (en caso contrario) podemos agregar complejidad 
+            a las comparfaciones de datos
+* Valores booleanos (`true`, `false`): son tipos de datos, nos ayudan a validar información, comparaciones
+            los valores boolenaos solo pueden ser falso o verdadero.
