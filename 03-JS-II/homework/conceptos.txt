@@ -1,0 +1,9 @@
+* For: nor permite crear un ciclo con ciertas carcateristicas
+    su estrructura es la siguiente:
+    for ("Expresion de inicio"; "condicion"; "Expresion de termino"){
+        intrucciones
+    }
+ * operadores logicos o boleanos
+    &&  AND exprecion logica que nos permite hacer la comparacion entre dos datos, hambos datos deben ser verdaderos para que toda la expresion seha verdadera
+    || OR Exprecion logica que nos permite hacer la compracion entre uno u otro datos, basta ocn que uno de dos datois seha verdadero para que toda la expresion seha verdadera
+    ! NOT (NEGACION) hace una negacion de los datos. si una exprescion es verdadera al negarla se convierte en falsa.
