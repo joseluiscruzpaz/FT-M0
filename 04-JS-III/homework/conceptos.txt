@@ -1,0 +1,4 @@
+Conceptos
+
+* Array: Espacio de memoria que funciona como archivador
+        
