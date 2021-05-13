@@ -3,18 +3,25 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un array
   // Tu código:
+  
+  devolverPrimerElemento = array[0];
+  return devolverPrimerElemento;
 }
 
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
+  devolverUltimoElemento = array.pop()
+  return devolverUltimoElemento;
 }
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
+  obtenerLargoDelArray = array.length;
+  return obtenerLargoDelArray;
 }
 
 
@@ -23,6 +30,13 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  for (var i = 0; i < array.length; i++) {
+    
+      array[i] = array[i] + 1;
+  }
+
+    return array;
+  
 }
 
 
@@ -30,6 +44,8 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
+  array.push(elemento);
+  return array;
 }
 
 
@@ -38,6 +54,8 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
+  array.unshift(elemento);
+  return array;
 }
 
 
@@ -47,6 +65,13 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
+  var frase = "";
+  for(var i = 0; i < palabras.length; i++){
+    if(i === palabras.length -1){
+      frase = frase + palabras[i];
+    }else frase = frase + palabras[i] + " ";
+  }
+  return frase;
 }
 
 
@@ -54,6 +79,13 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
+  for (var i = 0; i <= array.length; i++){
+    if (array[i] === elemento) {
+      return true;
+    }
+    return false;
+  }
+  
 }
 
 
@@ -61,6 +93,7 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
+
 }
 
 

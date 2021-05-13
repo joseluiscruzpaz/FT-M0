@@ -1,4 +1,5 @@
 Conceptos
 
 * Array: Espacio de memoria que funciona como archivador
-        
+    al cual se les pueden asignar diferentes cajones o
+    subespacios que a su ves contengan diferentes tipos de datos entre si
