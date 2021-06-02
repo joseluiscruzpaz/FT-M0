@@ -6,6 +6,8 @@
                     en este espacio van las instrucciones
                     o lo que va a rtealizar la funcion
                 }
+    Argumento: es el Dato que se va a procesar o con el que se va a trabajar dentro de la funcion.
+    Return: es la instruccion que nos devuelve el valor procesado o calculado, tambien corta la ejecucion de ese fragmento de codigo.
 * Declaraciones `if`: mediante el IF podemos validar y hacer comparaciones
             consu complemento "else" (en caso contrario) podemos agregar complejidad 
             a las comparfaciones de datos
