@@ -1,16 +1,18 @@
-function dePalabrasAFrase(palabras) {
-    // "palabras" es un array de strings/cadenas
-    // Devuelve un string donde todas las palabras estén concatenadas
-    // con espacios entre cada palabra
-    // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
-    // Tu código:
-    var frase = "";
-    for(var i = 0; i < palabras.length; i++){
-      if(i === palabras.length -1){
-        frase = frase + palabras[i];
-      }else frase = frase + palabras[i] + " ";
-    }
-    //return frase;
-    console.log(frase);
+function empiezaConNueve(n) {
+  //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
+  //inicia con 9 y false en otro caso.
+  //Escribe tu código aquí
+  var newArray  = [];
+  var aInteger = 0;
+
+  newArray= n.toString();
+  if (newArray[0] === 9) {
+    return true;
+  }else {
+    return false;
   }
-  dePalabrasAFrase(["hola","mundo","!"]);
+    
+  
+  
+}
+empiezaConNueve(1)

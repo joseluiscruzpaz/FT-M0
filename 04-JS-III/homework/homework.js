@@ -4,24 +4,24 @@ function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un array
   // Tu código:
   
-  devolverPrimerElemento = array[0];
-  return devolverPrimerElemento;
+  //devolverPrimerElemento = array[0];
+  return array[0];
 }
 
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
-  devolverUltimoElemento = array.pop()
-  return devolverUltimoElemento;
+  //devolverUltimoElemento = array.pop()
+  return array.pop();
 }
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
-  obtenerLargoDelArray = array.length;
-  return obtenerLargoDelArray;
+  //obtenerLargoDelArray = array.length;
+  return array.length;
 }
 
 
@@ -66,7 +66,7 @@ function dePalabrasAFrase(palabras) {
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
   var frase = "";
-  for(var i = 0; i < palabras.length; i++){
+  for(var i = 0; i <= palabras.length-1; i++){
     if(i === palabras.length -1){
       frase = frase + palabras[i];
     }else frase = frase + palabras[i] + " ";
@@ -79,13 +79,16 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
+  /*
   for (var i = 0; i <= array.length; i++){
     if (array[i] === elemento) {
       return true;
     }
     return false;
   }
-  
+  */
+  return array.includes(elemento);
+
 }
 
 
@@ -111,8 +114,8 @@ function promedioResultadosTest(resultadosTest) {
     suma = suma + resultadosTest[i];
     
   }
-  promedio = suma / resultadosTest.length;
-  return promedio;
+  // promedio = suma / resultadosTest.length;
+  return promedio = suma / resultadosTest.length;
 }
 
 
@@ -120,14 +123,14 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
- var numero = 0;
- for (var i = 0; i < numeros.length; i++) {
-   if (numeros[i] > numero) {
-     numero=numeros[i];
+ var biger = 0;
+ for (var i = 0; i <= numeros.length-1; i++) {
+   if (numeros[i] > biger) {
+     biger=numeros[i];
     }
    
   }
-  return numero;
+  return biger;
 }
 
 
@@ -135,14 +138,15 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
-  if (arguments.length === 0){
+  var producto = 1;
+  if (arguments.length === 0) {
     return 0;
   }
-  var multiplicacion = 1;
-  for (var i = 0; i <arguments.length; i++){
-    multiplicacion = multiplicacion * arguments[i];
+  for (let i = 0; i <= arguments.length-1; i++) {
+    producto = producto * arguments[i];
+    
   }
-  return multiplicacion;
+  return producto;
 }
 
 
