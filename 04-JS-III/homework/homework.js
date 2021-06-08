@@ -153,13 +153,15 @@ function multiplicarArgumentos() {
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
-  var cuenta= 0;
-  for (var i = 0; i < arreglo.length; i++) {
-    if(arreglo[i] > 18) {
-      cuenta= cuenta + 1;
+  var contador = 0;
+
+  for (let i = 0; i <= arreglo.length-1; i++) {
+    if (arreglo[i] > 18) {
+      contador++;
     }
+
   }
-  return cuenta;
+  return contador;
 }
 
 
@@ -179,6 +181,7 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
+  /*
   var i = 10;
   while(i > 9){
     i = Math.trunc(n/10);
@@ -187,6 +190,13 @@ function empiezaConNueve(n) {
     return true;
   }else
     return false;
+    */
+    var newArray = n.toString()
+    if (newArray[0] === "9") {
+      return true;
+    }else{
+      return false;
+    }
   
 }
 
@@ -196,7 +206,7 @@ function todosIguales(arreglo) {
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
   var item = arreglo[0];
-  for(var i = 0; i <= arreglo.length-1; i++){
+  for(var i = 0; i < arreglo.length; i++){
     if (arreglo[i] !== item) {
       return false; 
     }
