@@ -12,7 +12,7 @@ function mayuscula(nombre) {
     
     
   }
-  console-console.log(primeraMayuscula.join(""));
+  //console-console.log(primeraMayuscula.join(""));
   return primeraMayuscula.join("");
 }
 
@@ -35,12 +35,24 @@ function sumarArray(numeros, cb) {
   // No es necesario devolver nada
   //Tu código:
   
+  var suma = 0;
+
+  for (let i = 0; i <= numeros.length-1; i++) {
+    suma = suma + numeros[i];
+    
+  }
+  //console.log(suma);
+  //console.log(cb.push(suma));
+  return cb(suma);
 }
 
 function forEach(array, cb) {
   // Itera sobre la matriz "array" y pasa los valores al callback uno por uno
   // Pista: Estarás invocando a `cb` varias veces (una por cada valor en la matriz)
   //Tu código:
+  array.forEach(function(valor, i){
+    return cb(valor);
+  })
 }
 
 function map(array, cb) {
@@ -48,12 +60,28 @@ function map(array, cb) {
   // Itera sobre cada valor en "array", pásalo a `cb` y luego ubicar el valor devuelto por `cb` en un nuevo array
   // El nuevo array debe tener la misma longitud que el array del argumento
   //Tu código:
+  //console.log(array);
+  var newArray = [];
+  array.forEach(function(valor){
+    newArray.push(cb(valor));
+  });
+  return newArray;
 }
 
 function filter(array) {
   //Filtrar todos los elementos del array que comiencen con la letra "a".
   //Devolver un nuevo array con los elementos que cumplen la condición
   //Tu código:
+  console.log(array);
+  var newArray= [];
+  array.forEach(function(palabra){
+    if (palabra.startsWith('a')) {
+      //console.log(palabra);
+      newArray.push(palabra);
+    }
+  });
+  return newArray;
+
 }
 
 // No modificar nada debajo de esta línea

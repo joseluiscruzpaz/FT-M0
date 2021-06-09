@@ -1,0 +1,3 @@
+Funcion Callback: Son funciones que son llamadas desde otra funciones
+                esta funciones pueden ser el agumento de la 
+                funcion que las llama o las manda a traer.
