@@ -20,6 +20,7 @@ function crearUsuario() {
     return 'Hola, mi nombre es ' + this.nombre;
   }
   return Usuario;
+  console.log(Usuario);
 }
 
 function agregarMetodoPrototype(Constructor) {
