@@ -148,12 +148,21 @@ function sumarLikesDeUsuario(usuario) {
   }
   return suma;
   */
+ /*
   var suma = 0;
   usuarios= usuario.posts;
     for (let i = 0; i <= usuarios.length-1; i++) {
         suma = suma + usuarios[i].likes;
         
         
+    }
+    return suma;
+*/
+
+    var suma = 0;
+    for (let i = 0; i < usuario.posts.length; i++) {
+      suma = suma + usuario.posts[i].likes
+      
     }
     return suma;
 }
