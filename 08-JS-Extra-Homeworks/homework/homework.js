@@ -10,6 +10,8 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+  //console.log(objeto);
+
 }
 
 
@@ -50,6 +52,25 @@ function deleteAbc(cadena){
   //Define una función que elimine las letras "a", "b" y "c" de la cadena dada 
   //y devuelva la versión modificada o la misma cadena, en caso de contener dichas letras.
   //Escribe tu código aquí
+  
+  var newCadena= cadena.split("");
+  console.log(newCadena);
+  for (let i = 0; i <= newCadena.length-1; i++) {
+    if (newCadena[i] === "a" || newCadena[i] === "b" || newCadena[i] === "c") {
+      newCadena.splice(newCadena[i],1);
+
+    }
+    
+  }
+  console.log(newCadena);
+  console.log(cadena=newCadena);
+  console.log(cadena.join(""))
+  return cadena = newCadena.join("");
+  //return cadena.join('');
+  
+  
+  
+  
 }
 
 
@@ -57,6 +78,7 @@ function sortArray(arr) {
   //La función recibe una matriz de strings. Ordena la matriz en orden creciente de longitudes de cadena
   //Ej: Recibe ---> ["You", "are", "beautiful", "looking"] || Devuelve ---> [“You", "are", "looking", "beautiful"]
   //Escribe tu código aquí
+
 }
 
 
